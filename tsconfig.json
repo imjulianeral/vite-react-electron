@@ -23,7 +23,7 @@
     "paths": {
       "@main/*": ["main/*"],
       "@common/*": ["common/*"],
-      "@renderer/*": ["renderer/*"]
+      "@/*": ["renderer/*"]
     }
   },
   "exclude": ["node_modules", "app", "dist"]

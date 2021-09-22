@@ -7,12 +7,13 @@ const isDevelopment = process.env.NODE_ENV === "development";
 
 function createWindow() {
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1200,
+    height: 800,
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,
     },
+    autoHideMenuBar: true,
     show: false,
   }).once("ready-to-show", () => {
     win.show();

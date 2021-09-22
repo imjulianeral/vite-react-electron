@@ -3,7 +3,7 @@ import reactRefresh from "@vitejs/plugin-react-refresh";
 import { join, resolve } from "path";
 
 const rendererPath = resolve(__dirname, "./src/renderer");
-const outDirRenderer = resolve(__dirname, "./app/renderer")
+const outDirRenderer = resolve(__dirname, "./app/renderer");
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -17,7 +17,7 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        find: "@renderer",
+        find: "@",
         replacement: resolve(__dirname, "src/renderer"),
       },
       {
@@ -25,5 +25,8 @@ export default defineConfig({
         replacement: resolve(__dirname, "src/common"),
       },
     ],
+  },
+  esbuild: {
+    jsxInject: `import React from 'react'`,
   },
 });

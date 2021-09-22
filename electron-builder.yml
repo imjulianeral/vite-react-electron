@@ -1,6 +1,6 @@
-appId: com.jctaoo.electron_starter
+appId: com.imjulian.galo
 productName: electron starter
-copyright: Copyright © 2021 jctaoo
+copyright: Copyright © 2021 imjulian
 directories:
   output: dist
   buildResources: build
